@@ -12,35 +12,38 @@ const Header : React.FC = ()=>{
                 <FristLogoText>EXOTIC</FristLogoText>
                 <SecondLogoText>CARS</SecondLogoText>
             </LogoContainer>
-            <CarFilterContainer>
-                <LocationContainer>
-                    <GoLocation size={15}/>
-                    <LocationInput>
+            <>
+                <CarFilterContainer>
+                    <LocationContainer>
+                        <GoLocation size={15}/>
+                        <LocationInput>
 
-                    </LocationInput>    
-                </LocationContainer>
-                <DataContainer>
-                    <DateInput
-                        onChange={setInitialDate}
-                        value={initialDate}
-                        clearIcon={null}
-                        calendarIcon={<GoCalendar/>}
-                    />
-                     <DateInput
-                        onChange={setFinalDate}
-                        value={finalDate}
-                        clearIcon={null}
-                        calendarIcon={<GoCalendar/>}
-                    />
-                </DataContainer>
-                <SearchBtn>
-                    <GoSearch size={20} color="#7B89F4"/>
-                </SearchBtn>
-            </CarFilterContainer>
-            <ButtonsContainer>
-                <SignUpBtn>Sign up</SignUpBtn>
-                <LoginBtn>Sign in</LoginBtn>
-            </ButtonsContainer>
+                        </LocationInput>    
+                    </LocationContainer>
+                    <DataContainer>
+                        <DateInput
+                            onChange={setInitialDate}
+                            value={initialDate}
+                            clearIcon={null}
+                            calendarIcon={<GoCalendar/>}
+                        />
+                        <DateInput
+                            onChange={setFinalDate}
+                            value={finalDate}
+                            clearIcon={null}
+                            calendarIcon={<GoCalendar/>}
+                        />
+                        <SearchBtn className="SearchBtn">
+                            <GoSearch size={20} color="#7B89F4"/>
+                        </SearchBtn>
+                    </DataContainer>
+                    
+                </CarFilterContainer>
+                <ButtonsContainer>
+                    <SignUpBtn>Sign up</SignUpBtn>
+                    <LoginBtn>Sign in</LoginBtn>
+                </ButtonsContainer>
+            </>
         </HeaderContainer>
     )
 }

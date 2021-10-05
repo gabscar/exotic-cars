@@ -10,6 +10,17 @@ export const HeaderContainer = styled.div`
     height: 83px;
     align-items: center;
     justify-content: space-between;
+    @media (max-width:900px){
+        flex-direction: column;
+        height: 153px;
+    }
+
+    @media (max-width:1050px){
+        padding: 0% 5% 0% 5%;
+    }
+    @media (max-width:950px){
+        padding: 0% 1% 0% 1%;
+    }
 
 `
 
@@ -18,6 +29,10 @@ export const LogoContainer =  styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    @media (max-width:900px){
+        align-self:flex-start;
+        margin-bottom: 10px;
+    }
 `
 
 export const FristLogoText = styled.h1`
@@ -43,11 +58,29 @@ export const CarFilterContainer = styled.div`
     height: 36px;
     align-items: center;
     display: flex;
+    @media (max-width:900px){
+        flex-direction: column;
+        height: 70px;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+    }
+    @media (max-width:890px){
+        width: 70vw;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    @media (max-width:500px){
+
+    }
 `
 
 export const ButtonsContainer = styled.div`
     width: 200px;
-  
+    @media (max-width:900px){
+        margin-bottom: 10px;
+    }
 `
 export const SignUpBtn = styled.button`
     width: 84px;
@@ -83,6 +116,11 @@ export const LocationContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width:900px){
+        width: 100vw;
+        height: 30px;
+        margin-bottom: 10px;
+    }
 `
 export const LocationInput = styled.input`
     width: 150px;
@@ -92,14 +130,26 @@ export const LocationInput = styled.input`
     background: #F3F1FC 0% 0% no-repeat padding-box;
     border-radius: 20px;
     padding: 5px;
+    @media (max-width:900px){
+        width: 60vw;
+
+    }
+    @media (max-width:890px){
+        width: 50vw;
+    }
 `
 
 export const DataContainer = styled.div`
-    width: 250px;
+    width: 280px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 63px;
+    @media (max-width:500px){
+        margin-left: 0px;
+        padding-bottom: 2px;
+    }
+    
 `
 export const SearchBtn = styled.button`
     width: 30px;
