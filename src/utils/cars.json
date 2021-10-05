@@ -22,11 +22,6 @@
                 "option_id": 3,
                 "color": "red",
                 "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Porsche/Panamera/8332/1623302208231/233_jam-red_670f18.jpg?tr=w-898"
-              },
-              {
-                "option_id": 4,
-                "color": "blue",
-                "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Porsche/Panamera/8332/1623302208231/221_blue_061c53.jpg?tr=w-898"
               }
             ]
           },
@@ -52,11 +47,6 @@
                 "option_id": 3,
                 "color": "Blu Tour De France",
                 "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Ferrari/812/7859/1593773855493/BLU-TOUR-DE-FRANCE_803031.jpg?tr=w-898"
-              },
-              {
-                "option_id": 4,
-                "color": "Blu Mirabeau",
-                "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Ferrari/812/7859/1593773855493/BLU-MIRABEAU_4e5971.jpg?tr=w-898"
               }
             ]
           },
@@ -82,11 +72,6 @@
                 "option_id": 3,
                 "color": "Jet Black Metallic",
                 "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Porsche/Porsche-Cayenne/6459/Jet-Black-Metallic_1c1c1c.jpg?tr=w-898"
-              },
-              {
-                "option_id": 4,
-                "color": "Carrara White",
-                "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Porsche/Porsche-Cayenne/6459/Carrara-White-Metallic_dcdbe0.jpg?tr=w-898"
               }
             ]
           },
@@ -112,11 +97,6 @@
                 "option_id": 3,
                 "color": "Onyx Black",
                 "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Bentley/Continental/7775/1587039200205/227_Onyx_040405.jpg?tr=w-898"
-              },
-              {
-                "option_id": 4,
-                "color": "Candy Red",
-                "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Bentley/Continental/7775/1587039200205/224_Candy-Red---by-Mulliner_511717.jpg?tr=w-898"
               }
             ]
           },
@@ -142,11 +122,6 @@
                 "option_id": 3,
                 "color": "Firmament Blue Metallic",
                 "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Audi/A6/6426/1571906453205/Firmament-Blue-Metallic_132239.jpg?tr=w-880,h-495"
-              },
-              {
-                "option_id": 4,
-                "color": "Ibis White",
-                "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Audi/A6/6426/1571906453205/Solid-Finishes_edede5.jpg?tr=w-880,h-495"
               }
             ]
           },
@@ -172,11 +147,6 @@
                 "option_id": 3,
                 "color": "Black",
                 "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Ferrari/F8-Tributo/7945/1598599694868/black-daytone_666666.jpg?tr=w-898"
-              },
-              {
-                "option_id": 4,
-                "color": "Titan Gray Metallic",
-                "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Ferrari/F8-Tributo/7945/1598599694868/titanium-gray-metall_a0a4a7.jpg?tr=w-898"
               }
             ]
           },
@@ -202,11 +172,6 @@
                 "option_id": 3,
                 "color": "Blu Nethuns",
                 "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Lamborghini/Aventador/7636/1621852731887/221_blu-nethuns_114ad8.jpg?tr=w-880,h-495"
-              },
-              {
-                "option_id": 4,
-                "color": "Blue Sideris",
-                "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Lamborghini/Aventador/6721/1621854235683/226_blue-sideris_181e5e.jpg?tr=w-880,h-495"
               }
             ]
           },
@@ -232,12 +197,8 @@
                 "option_id": 3,
                 "color": "Yellow",
                 "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Lamborghini/Urus/8405/1621929816160/222_yellow_87df0c.jpg?tr=w-880,h-495"
-              },
-              {
-                "option_id": 4,
-                "color": "Blu Eleos",
-                "image_url": "https://stimg.cardekho.com/images/car-images/930x620/Lamborghini/Urus/4418/1621927640470/226_blu-eleos_376bc4.jpg?tr=w-880,h-495"
               }
+              
             ]
           }
     ]
