@@ -7,12 +7,12 @@ export const HeaderContainer = styled.div`
     padding: 0% 13% 0% 9%;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 10px 30px #0000001A;
-    height: 83px;
+    height: 5.188rem;
     align-items: center;
     justify-content: space-between;
     @media (max-width:900px){
         flex-direction: column;
-        height: 153px;
+        height: 9.563rem;
     }
 
     @media (max-width:1050px){
@@ -31,7 +31,7 @@ export const LogoContainer =  styled.div`
     align-items: center;
     @media (max-width:900px){
         align-self:flex-start;
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 `
 
@@ -45,7 +45,7 @@ export const FristLogoText = styled.h1`
 export const SecondLogoText = styled.h3`
     font: normal normal normal 16px/21px Segoe UI;
     letter-spacing: 0.64px;
-    padding-left: 5px;
+    padding-left: 0.313rem;
     color: #313136;
     opacity: 1;
 `
@@ -54,8 +54,8 @@ export const CarFilterContainer = styled.div`
     background: #F3F1FC 0% 0% no-repeat padding-box;
     border-radius: 18px;
     opacity: 0.59;
-    width: 540px;
-    height: 36px;
+    width: 33.75rem;
+    height: 2.25rem;
     align-items: center;
     display: flex;
     @media (max-width:900px){
@@ -79,7 +79,7 @@ export const CarFilterContainer = styled.div`
 export const ButtonsContainer = styled.div`
     width: 200px;
     @media (max-width:900px){
-        margin-bottom: 10px;
+        margin-bottom: 0.625rem;
     }
 `
 export const SignUpBtn = styled.button`
@@ -111,19 +111,19 @@ export const LoginBtn = styled.button`
 `
 
 export const LocationContainer = styled.div`
-    margin-left: 10px;
-    width: 160px;
+    margin-left: 0.625rem;
+    width: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     @media (max-width:900px){
         width: 100vw;
-        height: 30px;
-        margin-bottom: 10px;
+        height: 1.875rem;
+        margin-bottom: 0.625rem;
     }
 `
 export const LocationInput = styled.input`
-    width: 150px;
+    width: 9.375rem;
     margin-left: 3px;
     border-color: #0000001A;
     height: 20px;
@@ -140,11 +140,11 @@ export const LocationInput = styled.input`
 `
 
 export const DataContainer = styled.div`
-    width: 280px;
+    width: 17.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 63px;
+    margin-left: 3.938rem;
     @media (max-width:500px){
         margin-left: 0px;
         padding-bottom: 2px;
@@ -152,13 +152,13 @@ export const DataContainer = styled.div`
     
 `
 export const SearchBtn = styled.button`
-    width: 30px;
-    height: 30px;
+    width: 1.875rem;
+    height: 1.875rem;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 15px #00000014;
     border: none;
     opacity: 1;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     justify-content: center;
     align-items: center;
     display: flex;

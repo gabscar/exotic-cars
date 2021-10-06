@@ -1,7 +1,8 @@
 import React, {useEffect,useState} from "react"
 import Card from "../../Components/Card/Card";
-import { CardContainer } from "./styles";
+import { CardContainer, TopBtn } from "./styles";
 import api from '../../Services/api';
+import ScrollTop from "../../Components/ScrollTop/ScrollTop";
 
 
 export interface Cars{
@@ -16,10 +17,12 @@ export interface Cars{
 
 const ListCars :React.FC = ()=>{
     const [data, setData]= useState<Cars[]>([]);
+  
     useEffect(()=>{
         getCars();
     },[])
-
+    
+    
     async function getCars() {
         try{
             api.get('/cars')
@@ -44,9 +47,12 @@ const ListCars :React.FC = ()=>{
         return <p>sem carros</p>
     }
     return(
-        <CardContainer>
-            {RenderCars()}
-        </CardContainer>
+        <div style={{display:'flex', justifyContent:'center'}}>
+            <CardContainer>
+                {RenderCars()}
+            </CardContainer>
+            <ScrollTop/>
+        </div>
     )
 }
 

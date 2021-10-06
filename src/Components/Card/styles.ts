@@ -3,20 +3,21 @@ import styled from 'styled-components';
 
 export const CardDiv = styled.div`
     width: 287px;
-    height: 223px;
+    height: 233px;
     background: #F8F8FA 0% 0% no-repeat padding-box;
     border-radius: 20px;
     opacity: 1;
     display: flex;
     flex-direction: column;
-    margin-right: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 `
 
 export const TitleContainer = styled.div`
     flex-direction:column;
-    padding-left: 20px;
-    padding-top: 10px;
+    padding-left: 1.25rem;
+    padding-top: 0.625rem;
 `
 
 
@@ -35,8 +36,8 @@ export const CarModel = styled.p`
 `
 
 export const CarImage = styled.img`
-    width: 244px;
-    height: 137px;
+    width: 15.25rem;
+    height: 8.563rem;
     align-self: center;
     justify-self: center;
    
@@ -47,10 +48,11 @@ export const ValueContainer = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 1.25rem;
     h2 {
         font-size: 1rem;
-        font-weight: 500;
-        margin-bottom: 10px;
+        font-weight: bold;
+        margin-bottom: 0.625rem;
     }
     h1 {
         font-size: 1.5rem;
