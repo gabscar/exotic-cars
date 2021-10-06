@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 
 
@@ -93,6 +93,7 @@ export const MidContainer = styled.div`
      display: flex;
      justify-content: center;
      align-items: center;
+     margin-bottom: 0;
 `
 export const BackButton = styled.button`
     width: 177px;
@@ -159,6 +160,10 @@ export const BackButton = styled.button`
 export const NumberColorContainer = styled.div`
     position: absolute;
     right: 110px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
     @media (max-width:1200px){
         right: 9%;
@@ -174,4 +179,32 @@ export const NumberColorContainer = styled.div`
 
 `
 
-export const BottomContainer = styled.div``
+export const BottomContainer = styled.div`
+     width: 80%;
+     margin: 0 auto;
+     height: 300px;
+`
+export const BookContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+`
+export const ButtonBook = styled.button`
+    justify-content: center;
+    align-items: center;
+    font: normal normal 300 16px/21px Segoe UI;
+    letter-spacing: 0px;
+    color: white;
+    background: #313136 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 20px #0000001A;
+    border-radius: 25px;
+    width: 177px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    .arrowRight{
+        margin-left:4px;
+    }
+
+`
