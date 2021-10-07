@@ -10,8 +10,8 @@ export interface Cars{
     brand: string,
     model: string,
     price: number,
-    image_url: string,
-    brand_url: string,
+    image_card: string,
+    brand_img: string,
     options: []
 }
 

@@ -66,11 +66,14 @@ export const TextPrice = styled.h2`
 export const ImageContainer = styled.div`
     display: flex;
     justify-content: center;
-    max-width: 1100px;
+    width: 1000px;
+    height: 400px;
     @media (max-width:1300px){
         img {
             width: 89%;
-            height: 60%;
+            
+            min-width: 700px;
+            height: 390px;
         }
     }
     @media (max-width:1000px){
@@ -80,8 +83,16 @@ export const ImageContainer = styled.div`
         }
     }
     @media (max-width:900px){
+        
         img {
-            width: 85%;
+            width: 75%;
+            height: 60%;
+        }
+    }
+    @media (max-width:830px){
+       
+        img {
+            width: 80%;
             height: 60%;
         }
     }
@@ -93,7 +104,7 @@ export const MidContainer = styled.div`
      display: flex;
      justify-content: center;
      align-items: center;
-     margin-bottom: 0;
+     
 `
 export const BackButton = styled.button`
     width: 177px;
@@ -127,25 +138,29 @@ export const BackButton = styled.button`
     }
     @media (max-width:1000px){
         width: 30%;
-        
         font-size: 12px;
     }
 
     @media (max-width:900px){
         .arrow{
-            width: 10px;
-            height: 10px;
+            width: 30px;
+            height: 30px;
+            
         }
-        width: 20%;
+        width: 60px;
+        font-size: 0px;
+        border-radius: 60px;
     }
     @media (max-width:800px){
         .arrow{
-            width: 8px;
-            height: 8px;
+            width: 20px;
+            height: 20px;
         }
-        width: 30%;
+        width: 60px;
+        margin-right: 0px;
+        font-size: 0px;
     }
-    @media (max-width:700px){
+    @media (max-width:750px){
         .arrow{
             width: 20px;
             height: 20px;
@@ -154,6 +169,7 @@ export const BackButton = styled.button`
         border-radius: 60px;
         font-size: 0px;
         line-height: 0;
+        display: none;
     }
 `
 
@@ -180,9 +196,10 @@ export const NumberColorContainer = styled.div`
 `
 
 export const BottomContainer = styled.div`
-     width: 80%;
+     width: 90%;
      margin: 0 auto;
-     height: 300px;
+     min-height: 400px;
+   
 `
 export const BookContainer = styled.div`
     display: flex;
@@ -207,4 +224,12 @@ export const ButtonBook = styled.button`
         margin-left:4px;
     }
 
+`
+
+export const ButtonArrow = styled.button`
+    width: 60px;
+    height: 60px;
+    color:white;
+    background-color: black;
+    border-radius: 60px;
 `

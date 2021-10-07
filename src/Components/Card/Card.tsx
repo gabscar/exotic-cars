@@ -8,14 +8,14 @@ interface card{
 
 const Card : React.FC<card> = ({data})=>{
     
-    const {brand,price,image_url,model} =data;
+    const {brand,price,image_card,model} =data;
     return(
         <CardDiv>
             <TitleContainer>
                 <CarTitle>{brand}</CarTitle>
                 <CarModel>{model}</CarModel>
             </TitleContainer>
-            <CarImage src = {image_url}/>
+            <CarImage src = {image_card}/>
             <ValueContainer>
                 <h2>$</h2>
                 <h1>{price}</h1>
