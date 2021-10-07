@@ -6,30 +6,28 @@ interface carrousel{
     nextSlide: (index:number)=>void;
     prevSlide: (index:number)=>void;
     currentData: any[];
-    AnimationMovie: string;
     CurrentIndex:number;
 }
 
-const Carrousel : React.FC<carrousel> = ({nextSlide,prevSlide,currentData,AnimationMovie,CurrentIndex})=>{
+const Carrousel : React.FC<carrousel> = ({nextSlide,prevSlide,currentData,CurrentIndex})=>{
     const [current, setCurrent] = useState(1);
     
     
   
     return(
-        <CarrouselContainer transition={AnimationMovie}>
+        <CarrouselContainer>
             <BsFillArrowLeftCircleFill className='arrow' onClick={()=>prevSlide(CurrentIndex-1)} />
             {currentData.map((slide, index) => {
                
                 return (
                 <>
-                
-                
                { <div
-                    className={index === current ? 'slide active' : 'slide'}
+                    className={CurrentIndex === index ? 'slide active' : 'slide'}
                     key={index}
                 >
-                    <div>
-                        <img className={index === current ? 'img-active' : 'img'}src={slide.image} />
+                    <div onClick={index>CurrentIndex?()=>nextSlide(CurrentIndex+1)
+                        :index<CurrentIndex?()=>prevSlide(CurrentIndex-1):()=>prevSlide(CurrentIndex)}>
+                        <img className={CurrentIndex === index ? 'img-active' : 'img'}src={slide.image} />
                     </div>
                   
                 </div>

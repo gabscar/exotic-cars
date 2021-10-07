@@ -7,22 +7,13 @@ const SlideOutRigthAnimation = keyframes`
 
     to {
         visibility: hidden;
-        transform: translate3d('100%', 0, 0);
-    }
-`;
-const SlideOutLeftAnimation = keyframes`
-    from {
-    transform: translate3d(0, 0, 0);
-    }
-
-    to {
-        visibility: hidden;
-        transform: translate3d('-100%', 0, 0);
+        transform: translate3d('-100%', '-100%', 0);
     }
 `;
 
 
-export const CarrouselContainer = styled.div<{transition:string}>`
+
+export const CarrouselContainer = styled.div`
     
     display: flex;
     justify-content: space-between;
@@ -79,8 +70,8 @@ export const CarrouselContainer = styled.div<{transition:string}>`
             height:240px;
             width: 450px;
             transition-duration: 1s;
-            animation: ${({transition})=>transition==='rigth'&& css`0.5s ${SlideOutRigthAnimation}`};
-            animation: ${({transition})=>transition==='left'&& css`0.5s ${SlideOutLeftAnimation}`};
+            animation: ${ css`0.5s ${SlideOutRigthAnimation}`};
+            
         }
       
         height: 100%;  
@@ -208,14 +199,16 @@ export const CarrouselContainer = styled.div<{transition:string}>`
            
         }
     }
-    @media (max-width:1000px){
+    @media (max-width:950px){
         justify-content: center;
+      
         .slide {
+            
             div{
             
                width: 130px;
-               margin-left: 40px;
-               margin-right: 60px;
+               margin-left: 15px;
+               margin-right: 30px;
             }
             div .img{
                 height: 100px;
@@ -225,21 +218,56 @@ export const CarrouselContainer = styled.div<{transition:string}>`
         
 
         .slide.active {
+            display: flex;
+            
             margin-left: 30px;
             div{
             
-                width: 200px;
-               
+                width: 160px;
+                transform: translateY(0%);
             }
             div .img-active{
-                height:180px;
-                width: 290px;
-                transform: translateY(5%);
+                height:140px;
+                width: 220px;
+                
             }
         
              
            
         }
+    }
+    @media (max-width:800px){
+
+    }
+    @media (max-width:450px){
+        justify-content: space-around;
+        display: flex;
+        max-width: 100vw;
+        .slide{
+            display: none;
+        }
+        .arrow{
+            
+            height: 30px;
+            width: 30px;
+        
+        }
+        .slide.active {
+           
+            display: flex;
+           
+            div{
+                width: 180px;
+                transform: translateY(0%);
+               
+            }
+            div .img-active{
+                height:190px;
+                width: 280px;
+                
+            }
+        }
+
     }
     
 `

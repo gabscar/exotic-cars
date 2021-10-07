@@ -1,16 +1,21 @@
 import React from "react";
 import { CardDiv, CarImage, CarModel, CarTitle, TitleContainer, ValueContainer } from "./styles";
 import { Cars } from "../../Screens/ListCars/ListCars";
-
+import { useHistory } from 'react-router-dom';
 interface card{
     data: Cars
 }
 
+
 const Card : React.FC<card> = ({data})=>{
-    
+    const hystory = useHistory();
     const {brand,price,image_card,model} =data;
+    const handleDetailsPage = (car:Cars) => {
+       
+        hystory.push('/detail',car); 
+      };
     return(
-        <CardDiv>
+        <CardDiv onClick = {() => handleDetailsPage(data)}>
             <TitleContainer>
                 <CarTitle>{brand}</CarTitle>
                 <CarModel>{model}</CarModel>

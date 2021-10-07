@@ -2,45 +2,53 @@ import React,{useState,useEffect} from 'react'
 import { BackButton, BookContainer, BottomContainer, ButtonBook, DetailContainer, DetailTopContainer, ImageContainer, LogoCar, MidContainer, NumberColorContainer, TextContainer, TextPrice, TextTitleCar } from './styles'
 import { FiArrowLeft,FiArrowRight } from "react-icons/fi";
 import Carrousel from '../../Components/Carrousel/Carrousel';
+import {Cars} from '../ListCars/ListCars'
+import { Location } from "history";
+import { useLocation } from 'react-router';
 
 
+interface locProps{
+    
+    id: number,
+    brand: string,
+    model: string,
+    price: number,
+    image_card: string,
+    brand_img: string,
+    options: []
+    
+}
 
-const DetailCar:React.FC = () =>{
-
-    const [currentData,setCurrentData]= useState<any[]>(dumbyData.options)
+const DetailCar:React.FC =() =>{
+    const loc= useLocation<locProps>();
+    console.log(loc.state)
+    const {brand_img,brand,model,price,options}=loc.state;
+    const [currentData,setCurrentData]= useState<any[]>(options.slice(0,3))
     const [currentIndex,setCurrentIndex] = useState(1);
-    const [move,setMove]= useState('')
+  
     
     
     useEffect(() => {
-        
-        ChangeIndex()
-       
-       
-        setTimeout(()=>{
-            setMove('')
-        },200)
-        
+        ChangeIndex();
         setCurrentIndex(1);
-        
-
       }, [currentIndex]);
     
     
       function handleSelectActionModal(index: number) {
-        if (index > currentIndex) {
+        if (index === 2) {
           setCurrentIndex(0);
-          setMove('left');
+         
         }
-        if (index < currentIndex) {
+        if (index === 0) {
           setCurrentIndex(2);
-          setMove('right');
+      
         }
       }
     function ChangeIndex(){
         if (currentIndex === 0) {
             let aux = currentData;
             let shift = aux.shift();
+            console.log(shift,aux)
             setCurrentData([...currentData,shift]);            
         }else if (currentIndex === 2) {
             let aux = currentData;
@@ -52,11 +60,11 @@ const DetailCar:React.FC = () =>{
         <DetailContainer>
             <DetailTopContainer>
             <LogoCar >
-                <img style= {{width: '100%',}} src = {dumbyData.brand_img}></img>
+                <img style= {{width: '100%',}} src = {brand_img}></img>
             </LogoCar>
             <TextContainer>
-                <TextTitleCar>{dumbyData.brand} {dumbyData.model}</TextTitleCar>
-                <TextPrice>$ {dumbyData.price}/day</TextPrice>
+                <TextTitleCar>{brand} {model}</TextTitleCar>
+                <TextPrice>$ {price}/day</TextPrice>
             </TextContainer>
             </DetailTopContainer>
             <MidContainer>
@@ -64,7 +72,7 @@ const DetailCar:React.FC = () =>{
                 <ImageContainer>
                     <img src = {currentData[1].image}></img>
                     <NumberColorContainer>
-                        <TextTitleCar>0{currentData[1].option_id}</TextTitleCar>
+                        <TextTitleCar>0{currentData[1].id_option}</TextTitleCar>
                         <TextPrice>{currentData[1].color}</TextPrice>
                     </NumberColorContainer>
                 </ImageContainer>
@@ -77,7 +85,6 @@ const DetailCar:React.FC = () =>{
                 <Carrousel prevSlide={handleSelectActionModal} 
                            nextSlide={handleSelectActionModal} 
                            currentData={currentData} 
-                           AnimationMovie={move}
                            CurrentIndex={currentIndex}
                            />
             </BottomContainer>
@@ -100,17 +107,17 @@ const dumbyData={
     "brand_img": "https://i.imgur.com/jXGmNpA.png",
     "options": [
         {
-        "option_id": 1,
+        "id_option": 1,
         "color": "Silver",
         "image": "https://i.imgur.com/dg1sp7e.png"
         },
         {
-        "option_id": 2,
+        "id_option": 2,
         "color": "Yellow",
         "image": "https://i.imgur.com/zeUcDjD.png"
         },
         {
-        "option_id": 3,
+        "id_option": 3,
         "color": "Red",
         "image": "https://i.imgur.com/oPzG0Gx.png"
         }

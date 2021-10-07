@@ -16,8 +16,8 @@ const Routes: React.FC = () => {
                     <Route path="/" exact >
                         <ListCars/>
                     </Route>
-                    <Route path= "/detail">
-                        <DetailCar/>
+                    <Route path= "/detail" component={DetailCar}>
+                        
                     </Route>
                 </Switch>
             </BrowserRouter>
