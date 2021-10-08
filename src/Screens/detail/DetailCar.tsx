@@ -4,7 +4,8 @@ import { FiArrowLeft,FiArrowRight } from "react-icons/fi";
 import Carrousel from '../../Components/Carrousel/Carrousel';
 import {Cars} from '../ListCars/ListCars'
 import { Location } from "history";
-import { useLocation } from 'react-router';
+import { useLocation,useHistory } from 'react-router';
+import { Loading } from '../../Components/LoadingComponent/LoadingComponent';
 
 
 interface locProps{
@@ -21,11 +22,13 @@ interface locProps{
 
 const DetailCar:React.FC =() =>{
     const loc= useLocation<locProps>();
-    console.log(loc.state)
+    const history = useHistory();
     const {brand_img,brand,model,price,options}=loc.state;
     const [currentData,setCurrentData]= useState<any[]>(options.slice(0,3))
     const [currentIndex,setCurrentIndex] = useState(1);
-  
+    const [logoIsLoaded, setLogoIsLoaded] = useState(false);
+    const [mainIsLoaded, setMainIsLoaded] = useState(false);
+   
     
     
     useEffect(() => {
@@ -37,18 +40,15 @@ const DetailCar:React.FC =() =>{
       function handleSelectActionModal(index: number) {
         if (index === 2) {
           setCurrentIndex(0);
-         
         }
         if (index === 0) {
           setCurrentIndex(2);
-      
         }
       }
     function ChangeIndex(){
         if (currentIndex === 0) {
             let aux = currentData;
             let shift = aux.shift();
-            console.log(shift,aux)
             setCurrentData([...currentData,shift]);            
         }else if (currentIndex === 2) {
             let aux = currentData;
@@ -56,11 +56,17 @@ const DetailCar:React.FC =() =>{
             setCurrentData([pop,...currentData]);
         }
     }
+    function handleListGoBack(){
+        history.goBack();
+    }
     return(
         <DetailContainer>
             <DetailTopContainer>
             <LogoCar >
-                <img style= {{width: '100%',}} src = {brand_img}></img>
+                {logoIsLoaded ? null : (
+                    <Loading/>
+                )}
+                <img style= {{width: '100%',}} src = {brand_img} onLoad={()=>setLogoIsLoaded(true)}></img>
             </LogoCar>
             <TextContainer>
                 <TextTitleCar>{brand} {model}</TextTitleCar>
@@ -68,9 +74,10 @@ const DetailCar:React.FC =() =>{
             </TextContainer>
             </DetailTopContainer>
             <MidContainer>
-                <BackButton> <FiArrowLeft className = "arrow"size = {15}/>Back to catalog</BackButton>
+                <BackButton onClick = {handleListGoBack}> <FiArrowLeft className = "arrow"size = {15}/>Back to catalog</BackButton>
                 <ImageContainer>
-                    <img src = {currentData[1].image}></img>
+                    {mainIsLoaded? null : <Loading/>}
+                    <img src = {currentData[1].image} onLoad={()=>setMainIsLoaded(true)}></img>
                     <NumberColorContainer>
                         <TextTitleCar>0{currentData[1].id_option}</TextTitleCar>
                         <TextPrice>{currentData[1].color}</TextPrice>

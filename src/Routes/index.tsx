@@ -1,6 +1,6 @@
   
 import React from 'react';
-import { Switch, Route,BrowserRouter } from 'react-router-dom';
+import { Switch, Route,BrowserRouter,Redirect } from 'react-router-dom';
 import Header from '../Components/Header/Header';
 import DetailCar from '../Screens/detail/DetailCar';
 import ListCars from '../Screens/ListCars/ListCars';
@@ -16,8 +16,11 @@ const Routes: React.FC = () => {
                     <Route path="/" exact >
                         <ListCars/>
                     </Route>
-                    <Route path= "/detail" component={DetailCar}>
-                        
+                    <Route path= "/detail/:name" exact >
+                        <DetailCar/>
+                    </Route>
+                    <Route path = "*">
+                        <Redirect to="/" />
                     </Route>
                 </Switch>
             </BrowserRouter>

@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { CarrouselContainer } from './styles';
 import { BsFillArrowRightCircleFill,BsFillArrowLeftCircleFill } from "react-icons/bs";
 import { FiArrowLeft,FiArrowRight } from "react-icons/fi";
+import { Loading } from '../LoadingComponent/LoadingComponent';
 interface carrousel{
     nextSlide: (index:number)=>void;
     prevSlide: (index:number)=>void;
@@ -10,7 +11,8 @@ interface carrousel{
 }
 
 const Carrousel : React.FC<carrousel> = ({nextSlide,prevSlide,currentData,CurrentIndex})=>{
-    const [current, setCurrent] = useState(1);
+   
+    const [optionIsLoaded, setOptionIsLoaded] = useState(false);
     
     
   
@@ -27,7 +29,8 @@ const Carrousel : React.FC<carrousel> = ({nextSlide,prevSlide,currentData,Curren
                 >
                     <div onClick={index>CurrentIndex?()=>nextSlide(CurrentIndex+1)
                         :index<CurrentIndex?()=>prevSlide(CurrentIndex-1):()=>prevSlide(CurrentIndex)}>
-                        <img className={CurrentIndex === index ? 'img-active' : 'img'}src={slide.image} />
+                        {optionIsLoaded? null : <div style={{display:'flex', alignItems:'center',justifyContent:'center'}}><Loading/></div>}
+                        <img className={CurrentIndex === index ? 'img-active' : 'img'}src={slide.image} onLoad={()=>setOptionIsLoaded(true)} />
                     </div>
                   
                 </div>
