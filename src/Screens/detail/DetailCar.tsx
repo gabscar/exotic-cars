@@ -29,7 +29,7 @@ const DetailCar:React.FC =() =>{
     const [logoIsLoaded, setLogoIsLoaded] = useState(false);
     const [mainIsLoaded, setMainIsLoaded] = useState(false);
    
-    
+    console.log(options.length)
     
     useEffect(() => {
         ChangeIndex();

@@ -34,13 +34,17 @@ export const CarModel = styled.p`
     letter-spacing: 0px;
     color: #313136;
 `
+export const CarImageContainer = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    height: 200px;
+`
 
 export const CarImage = styled.img`
-    width: 15.25rem;
-    height: 8.563rem;
-    align-self: center;
-    justify-self: center;
-   
+   max-width: 300px;
+   max-height: 130px;
 `
 
 export const ValueContainer = styled.div`

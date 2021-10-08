@@ -44,6 +44,7 @@ export const CarrouselContainer = styled.div`
             border-radius: 30px;
         }
         div .img{
+            justify-self: center;
            transform: translateX(15%);
             height: 180px;
             width: 330px;

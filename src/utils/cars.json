@@ -3,200 +3,221 @@
         {
             "id": 1,
             "brand": "Prosche",
-            "model": "Panameira",
+            "model": "911 TURBO S",
             "price": 825,
-            "image_card": "https://imgur.com/O4M6izp.png",
+            "image_card": "https://imgur.com/WHLWBq4.png",
             "brand_img": "https://imgur.com/4Udq52s.png",
             "options": [
               {
                 "id_option": 1,
-                "color": "orange",
-                "image": "https://i.imgur.com/SngV2N2.png"
+                "color": "White",
+                "image": "https://imgur.com/RUUw6Ka.png"
               },
               {
                 "id_option": 2,
-                "color": "black",
-                "image": "https://i.imgur.com/lh3821z.png"
+                "color": "Silver",
+                "image": "https://imgur.com/lncvYZj.png"
               },
               {
                 "id_option": 3,
-                "color": "red",
-                "image": "https://i.imgur.com/9sNeR6e.png"
+                "color": "Red",
+                "image": "https://imgur.com/ovFfxzj.png"
               }
             ]
           },
           {
             "id": 2,
-            "brand": "Ferrari",
-            "model": "812",
+            "brand": "Bentley",
+            "model": "Continental",
             "price": 1025,
-            "image_card": "https://imgur.com/4Cxahyb.png",
+            "image_card": "https://imgur.com/4S0PQYW.png",
             "brand_img": "https://imgur.com/X58yQGW.png",
             "options": [
               {
                 "id_option": 1,
-                "color": "Bianco Avus",
-                "image": "https://i.imgur.com/k2UpNFc.png"
+                "color": "White",
+                "image": "https://imgur.com/ldyf9tw.png"
               },
               {
                 "id_option": 2,
-                "color": "Grigio Alloy",
-                "image": "https://i.imgur.com/wYqWV6e.png"
+                "color": "Blue",
+                "image": "https://imgur.com/jqhQ8Nv.png"
               },
               {
                 "id_option": 3,
-                "color": "Blu Tour De France",
-                "image": "https://i.imgur.com/dkEXkwg.png"
+                "color": "Baby Blue",
+                "image": "https://imgur.com/4YyaaKz.png"
               }
             ]
           },
           {
             "id": 3,
-            "brand": "Prosche",
-            "model": "Cayenne",
+            "brand": "Alfa Romeo",
+            "model": "4C SPIDER",
             "price": 925,
-            "image_card": "https://imgur.com/XInrdlh.png",
+            "image_card": "https://imgur.com/lkCDADO.png",
             "brand_img": "https://imgur.com/4Udq52s.png",
             "options": [
               {
                 "id_option": 1,
-                "color": "Quartz Grey Metallic",
-                "image": "https://i.imgur.com/7GPgP5Q.png"
+                "color": "Red",
+                "image": "https://imgur.com/yiC1oq8.png"
               },
               {
                 "id_option": 2,
-                "color": "Rhodium Silver Metallic",
-                "image": "https://i.imgur.com/hGDy3fP.png"
+                "color": "Black",
+                "image": "https://imgur.com/MLggkez.png"
               },
               {
                 "id_option": 3,
-                "color": "Jet Black Metallic",
-                "image": "https://i.imgur.com/uvSOSi6.png"
+                "color": "Yellow",
+                "image": "https://imgur.com/ksDITJ0.png"
               }
             ]
           },
           {
             "id": 4,
-            "brand": "Bentley",
-            "model": "Continental",
+            "brand": "Mclaren",
+            "model": "P1 GTR",
             "price": 1050,
-            "image_card": "https://imgur.com/CiPX7FF.png",
+            "image_card": "https://imgur.com/fIIIptl.png",
             "brand_img": "https://imgur.com/McyqghN.png",
             "options": [
               {
                 "id_option": 1,
-                "color": "Khamun",
-                "image": "https://i.imgur.com/UfPjptY.png"
+                "color": "Black",
+                "image": "https://imgur.com/KMy7pJ7.png"
               },
               {
                 "id_option": 2,
-                "color": "Extreme Silver",
-                "image": "https://i.imgur.com/KnA0K3q.png"
+                "color": "White",
+                "image": "https://imgur.com/ldPDh2F.png"
               },
               {
                 "id_option": 3,
-                "color": "Onyx Black",
-                "image": "https://i.imgur.com/mrRUueA.png"
+                "color": "Silver",
+                "image": "https://imgur.com/5cdRZqx.png"
               }
             ]
           },
           {
             "id": 5,
-            "brand": "Audi",
-            "model": "A6",
+            "brand": "Lamborghine",
+            "model": "AVENTADOR",
             "price": 990,
-            "image_card": "https://imgur.com/LQVLMcI.png",
+            "image_card": "https://imgur.com/aUHbUvS.png",
             "brand_img": "https://imgur.com/HMx7Y4y.png",
             "options": [
               {
                 "id_option": 1,
-                "color": "Myth Black Metallic",
-                "image": "https://stimg.cardekho.com/images/car-images/930x620/Audi/A6/6426/1571906453205/Myth-Black-Metallic_2b3737.jpg?tr=w-880,h-495.png"
+                "color": "Yellow",
+                "image": "https://imgur.com/Kmmle0X.png"
               },
               {
                 "id_option": 2,
-                "color": "Typhoon Gray Metallic",
-                "image": "https://stimg.cardekho.com/images/car-images/930x620/Audi/A6/6426/1571906453205/Vesuvius-Gray-Metallic_38454b.jpg?tr=w-880,h-495.png"
+                "color": "Orange",
+                "image": "https://imgur.com/6tOmHcL.png"
               },
               {
                 "id_option": 3,
-                "color": "Firmament Blue Metallic",
-                "image": "https://stimg.cardekho.com/images/car-images/930x620/Audi/A6/6426/1571906453205/Firmament-Blue-Metallic_132239.jpg?tr=w-880,h-495.png"
+                "color": "White",
+                "image": "https://imgur.com/xuSCxVZ.png"
               }
             ]
           },
           {
             "id": 6,
-            "brand": "Ferrari",
-            "model": "F8 Tributo",
+            "brand": "Bugatti",
+            "model": "VEYRON SPYDER",
             "price": 2025,
-            "image_card": "https://imgur.com/1Vz2PKB.png",
+            "image_card": "https://imgur.com/AyzYvNg.png",
             "brand_img": "https://imgur.com/X58yQGW.png",
             "options": [
               {
                 "id_option": 1,
-                "color": "BLUE RACING",
-                "image": "https://stimg.cardekho.com/images/car-images/930x620/Ferrari/F8-Tributo/7945/1598599694868/blue-race_6e839e.jpg?tr=w-898.png"
+                "color": "Gray",
+                "image": "https://imgur.com/T007RpF.png"
               },
               {
                 "id_option": 2,
-                "color": "Red",
-                "image": "https://stimg.cardekho.com/images/car-images/930x620/Ferrari/F8-Tributo/7945/1598599694868/red-dino_ac3122.jpg?tr=w-898.png"
+                "color": "Silver",
+                "image": "https://imgur.com/KO6cHl2.png"
               },
               {
                 "id_option": 3,
                 "color": "Black",
-                "image": "https://stimg.cardekho.com/images/car-images/930x620/Ferrari/F8-Tributo/7945/1598599694868/black-daytone_666666.jpg?tr=w-898.png"
+                "image": "https://imgur.com/ddM15Bn.png"
               }
             ]
           },
           {
             "id": 7,
-            "brand": "Lamborghini",
-            "model": "Aventador",
+            "brand": "Chevrolet",
+            "model": "CORVETT",
             "price": 725,
-            "image_card": "https://imgur.com/gRlS0ST.png",
+            "image_card": "https://imgur.com/Npwvknb.png",
             "brand_img": "https://imgur.com/hDJB90z.png",
             "options": [
               {
                 "id_option": 1,
-                "color": "Grigio Adamas",
-                "image": "https://stimg.cardekho.com/images/car-images/930x620/Lamborghini/Aventador/7636/1621852731887/223_grigio-adamas_989898.jpg?tr=w-880,h-495.png"
+                "color": "Yellow",
+                "image": "https://imgur.com/Aa7SwWB.png"
               },
               {
                 "id_option": 2,
-                "color": "Arancio Atlas",
-                "image": "https://stimg.cardekho.com/images/car-images/930x620/Lamborghini/Aventador/7636/1621852731887/224_arancio-atlas_ffc174.jpg?tr=w-880,h-495.png"
+                "color": "White",
+                "image": "https://imgur.com/nwsuBj8.png"
               },
               {
                 "id_option": 3,
-                "color": "Blu Nethuns",
-                "image": "https://stimg.cardekho.com/images/car-images/930x620/Lamborghini/Aventador/7636/1621852731887/221_blu-nethuns_114ad8.jpg?tr=w-880,h-495.png"
+                "color": "Black",
+                "image": "https://imgur.com/zL6jy5I.png"
               }
             ]
           },
           {
             "id": 8,
-            "brand": "Lamborghini",
-            "model": "Urus",
+            "brand": "Mercedes",
+            "model": "AMG GTS",
             "price": 725,
             "image_card": "https://imgur.com/31Kt4E0.png",
             "brand_img": "https://imgur.com/hDJB90z.png",
             "options": [
               {
                 "id_option": 1,
-                "color": "Nero Helene",
-                "image": "https://stimg.cardekho.com/images/car-images/930x620/Lamborghini/Urus/4418/1621927640470/225_nero-helene-_343739.jpg?tr=w-880,h-495.png"
+                "color": "Silver",
+                "image": "https://imgur.com/T7n9YD7.png"
               },
               {
                 "id_option": 2,
-                "color": "Blu Astraeus",
-                "image": "https://stimg.cardekho.com/images/car-images/930x620/Lamborghini/Urus/4418/1621927640470/223_blue-astraeus_1b3185.jpg?tr=w-880,h-495.png"
+                "color": "Balck",
+                "image": "https://imgur.com/RCpeg1r.png"
+              }
+              
+            ]
+          },
+          {
+            "id": 9,
+            "brand": "Ferrari",
+            "model": "California",
+            "price": 725,
+            "image_card": "https://i.imgur.com/UPyPwDR.png",
+            "brand_img": "https://i.imgur.com/BxftRqM.png",
+            "options": [
+              {
+                "id_option": 1,
+                "color": "Yellow",
+                "image": "https://i.imgur.com/zeUcDjD.png"
+              },
+              {
+                "id_option": 2,
+                "color": "Red",
+                "image": "https://i.imgur.com/oPzG0Gx.png"
               },
               {
                 "id_option": 3,
-                "color": "Yellow",
-                "image": "https://stimg.cardekho.com/images/car-images/930x620/Lamborghini/Urus/8405/1621929816160/222_yellow_87df0c.jpg?tr=w-880,h-495.png"
+                "color": "Gray",
+                "image": "https://i.imgur.com/dg1sp7e.png"
               }
               
             ]

@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import { CardDiv, CarImage, CarModel, CarTitle, TitleContainer, ValueContainer } from "./styles";
+import { CardDiv, CarImage, CarImageContainer, CarModel, CarTitle, TitleContainer, ValueContainer } from "./styles";
 import { Cars } from "../../Screens/ListCars/ListCars";
 import { useHistory } from 'react-router-dom';
 import { Loading } from "../LoadingComponent/LoadingComponent";
@@ -22,7 +22,9 @@ const Card : React.FC<card> = ({data})=>{
                 <CarTitle>{brand}</CarTitle>
                 <CarModel>{model}</CarModel>
             </TitleContainer>
-            <CarImage src = {image_card} onLoad = {()=>setIsLoaded(true)}/>
+            <CarImageContainer>
+                <CarImage src = {image_card} onLoad = {()=>setIsLoaded(true)}/>
+            </CarImageContainer>
             <ValueContainer>
                 <h2>$</h2>
                 <h1>{price}</h1>
