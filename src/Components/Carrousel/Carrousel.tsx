@@ -17,7 +17,9 @@ const Carrousel : React.FC<carrousel> = ({nextSlide,prevSlide,currentData,Curren
     
     return(
         <CarrouselContainer>
-            { currentData.length>1?<BsFillArrowLeftCircleFill className='arrow' onClick={()=>prevSlide(CurrentIndex-1)} />:null}
+            { currentData.length>1?<BsFillArrowLeftCircleFill className='arrow' onClick={()=>prevSlide(CurrentIndex-1)} />:
+                <BsFillArrowLeftCircleFill className='arrow' onClick={()=>prevSlide(CurrentIndex)}/>
+            }
             {currentData.map((slide, index) => {
                
                 return (
@@ -36,7 +38,9 @@ const Carrousel : React.FC<carrousel> = ({nextSlide,prevSlide,currentData,Curren
                 </>
                 );
             })}
-            {currentData.length>1?<BsFillArrowRightCircleFill className='arrow' onClick={()=>nextSlide(CurrentIndex+1)} />:null}
+            {currentData.length>1?<BsFillArrowRightCircleFill className='arrow' onClick={()=>nextSlide(CurrentIndex+1)} />:
+                <BsFillArrowRightCircleFill className='arrow' onClick={()=>nextSlide(CurrentIndex)} />
+            }
         </CarrouselContainer>
     )
 }
@@ -44,31 +48,3 @@ const Carrousel : React.FC<carrousel> = ({nextSlide,prevSlide,currentData,Curren
 
 export default Carrousel;
 
-
-const dumbyData={
-    
-    "id": 1,
-    "brand": "Prosche",
-    "model": "Panameira",
-    "price": 825,
-    "image_card": "https://imgur.com/O4M6izp.png",
-    "brand_img": "https://i.imgur.com/jXGmNpA.png",
-    "options": [
-        {
-        "id_option": 1,
-        "color": "Silver",
-        "image": "https://i.imgur.com/dg1sp7e.png"
-        },
-        {
-        "id_option": 2,
-        "color": "Yellow",
-        "image": "https://i.imgur.com/zeUcDjD.png"
-        },
-        {
-        "id_option": 3,
-        "color": "Red",
-        "image": "https://i.imgur.com/oPzG0Gx.png"
-        }
-    ]
-      
-}

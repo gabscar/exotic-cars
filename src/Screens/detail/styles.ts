@@ -238,6 +238,8 @@ export const BottomContainer = styled.div`
      margin: 0 auto;
      min-height: 400px;
     max-width: 100vw;
+    justify-content: center;
+    align-items: center;
      @media (max-width:700px){
          width: 95vw;
      }
@@ -295,4 +297,19 @@ export const ButtonArrow = styled.button`
     color:white;
     background-color: black;
     border-radius: 60px;
+`
+
+export const NotCars = styled.h2`
+    text-align: center;
+    font: normal normal 300 32px/41px Segoe UI;
+    margin-bottom: 12px;
+`
+
+export const ContainerNotCars = styled.div`
+    height: 600px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
 `
