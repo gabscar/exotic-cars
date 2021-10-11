@@ -13,6 +13,7 @@ export const Loading = styled.div`
     display: inline-block;
     width: 30px;
     height: 30px;
+   
     :after{
         content: ' ';
         display: block;

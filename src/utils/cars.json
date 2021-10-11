@@ -6,7 +6,7 @@
             "model": "911 TURBO S",
             "price": 825,
             "image_card": "https://imgur.com/WHLWBq4.png",
-            "brand_img": "https://imgur.com/4Udq52s.png",
+            "brand_img": "https://imgur.com/6yNQv7U.png",
             "options": [
               {
                 "id_option": 1,
@@ -31,7 +31,7 @@
             "model": "Continental",
             "price": 1025,
             "image_card": "https://imgur.com/4S0PQYW.png",
-            "brand_img": "https://imgur.com/X58yQGW.png",
+            "brand_img": "https://imgur.com/D1R4f9M.png",
             "options": [
               {
                 "id_option": 1,
@@ -56,7 +56,7 @@
             "model": "4C SPIDER",
             "price": 925,
             "image_card": "https://imgur.com/lkCDADO.png",
-            "brand_img": "https://imgur.com/4Udq52s.png",
+            "brand_img": "https://imgur.com/XmzOHvv.png",
             "options": [
               {
                 "id_option": 1,
@@ -81,7 +81,7 @@
             "model": "P1 GTR",
             "price": 1050,
             "image_card": "https://imgur.com/fIIIptl.png",
-            "brand_img": "https://imgur.com/McyqghN.png",
+            "brand_img": "https://imgur.com/8g7we5V.png",
             "options": [
               {
                 "id_option": 1,
@@ -106,7 +106,7 @@
             "model": "AVENTADOR",
             "price": 990,
             "image_card": "https://imgur.com/aUHbUvS.png",
-            "brand_img": "https://imgur.com/HMx7Y4y.png",
+            "brand_img": "https://imgur.com/eE1kWK5.png",
             "options": [
               {
                 "id_option": 1,
@@ -131,7 +131,7 @@
             "model": "VEYRON SPYDER",
             "price": 2025,
             "image_card": "https://imgur.com/AyzYvNg.png",
-            "brand_img": "https://imgur.com/X58yQGW.png",
+            "brand_img": "https://imgur.com/LfeygBe.png",
             "options": [
               {
                 "id_option": 1,
@@ -156,7 +156,7 @@
             "model": "CORVETT",
             "price": 725,
             "image_card": "https://imgur.com/Npwvknb.png",
-            "brand_img": "https://imgur.com/hDJB90z.png",
+            "brand_img": "https://imgur.com/NEmXhU0.png",
             "options": [
               {
                 "id_option": 1,
@@ -180,8 +180,8 @@
             "brand": "Mercedes",
             "model": "AMG GTS",
             "price": 725,
-            "image_card": "https://imgur.com/31Kt4E0.png",
-            "brand_img": "https://imgur.com/hDJB90z.png",
+            "image_card": "https://imgur.com/7fxvLU6.png",
+            "brand_img": "https://imgur.com/kpTe3vJ.png",
             "options": [
               {
                 "id_option": 1,
@@ -190,7 +190,7 @@
               },
               {
                 "id_option": 2,
-                "color": "Balck",
+                "color": "Black",
                 "image": "https://imgur.com/RCpeg1r.png"
               }
               
@@ -218,6 +218,32 @@
                 "id_option": 3,
                 "color": "Gray",
                 "image": "https://i.imgur.com/dg1sp7e.png"
+              }
+              
+            ]
+          },
+          {
+            "id": 10,
+            "brand": "Ferrari",
+            "model": "California 1",
+            "price": 825,
+            "image_card": "https://i.imgur.com/UPyPwDR.png",
+            "brand_img": "https://i.imgur.com/BxftRqM.png",
+            "options": [
+            ]
+          },
+          {
+            "id": 11,
+            "brand": "Ferrari",
+            "model": "California 2",
+            "price": 925,
+            "image_card": "https://i.imgur.com/UPyPwDR.png",
+            "brand_img": "https://i.imgur.com/BxftRqM.png",
+            "options": [
+              {
+                "id_option": 1,
+                "color": "Yellow",
+                "image": "https://i.imgur.com/zeUcDjD.png"
               }
               
             ]

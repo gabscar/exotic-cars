@@ -5,7 +5,12 @@ import styled, {keyframes} from "styled-components";
 export const DetailContainer = styled.div`
     flex-direction: column;
     justify-content: center;
-    margin-top: 53px;
+    padding-top: 53px;
+    background: rgb(235,235,235);
+    background: linear-gradient(180deg, rgba(235,235,235,1) 10%, rgba(223,222,222,1) 52%, rgba(200,200,200,1) 71%);
+    @media (max-width:400px){
+        width: 400px;
+      }
     
 `
 
@@ -119,6 +124,7 @@ export const MidContainer = styled.div`
      justify-content: center;
      align-items: center;
      max-width: 100vw;
+    
      
 `
 export const BackButton = styled.button`
@@ -128,7 +134,9 @@ export const BackButton = styled.button`
     justify-content: center;
     align-items: center;
     display: flex;
+    cursor: pointer;
     font: normal normal 300 18px Segoe UI;
+    background-color: transparent;
     .arrow{
         margin-left: 4px;
         margin-right: 4px;
@@ -229,7 +237,7 @@ export const BottomContainer = styled.div`
      width: 90%;
      margin: 0 auto;
      min-height: 400px;
-
+    max-width: 100vw;
      @media (max-width:700px){
          width: 95vw;
      }
@@ -239,7 +247,11 @@ export const BookContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    flex-direction: column;
+    @media (max-width: 1000px){
+        margin-bottom: 0;
+    }
 `
 export const ButtonBook = styled.button`
     justify-content: center;
@@ -258,6 +270,23 @@ export const ButtonBook = styled.button`
         margin-left:4px;
     }
 
+`
+export const BackButtonAux = styled.button`
+    justify-content: center;
+    align-items: center;
+    font: normal normal 300 16px/21px Segoe UI;
+    letter-spacing: 0px;
+    width: 177px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    box-shadow: 0px 5px 20px #0000001A;
+    border-radius: 25px;
+    margin-top: 10px;
+    background-color: transparent;
+    .arrowLeft{
+        margin-left:4px;
+    }
 `
 
 export const ButtonArrow = styled.button`

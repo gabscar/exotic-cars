@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import { BackButton, BookContainer, BottomContainer, ButtonBook, DetailContainer, DetailTopContainer, ImageContainer, LogoCar, MidContainer, NumberColorContainer, TextContainer, TextPrice, TextTitleCar } from './styles'
+import { BackButton, BackButtonAux, BookContainer, BottomContainer, ButtonBook, DetailContainer, DetailTopContainer, ImageContainer, LogoCar, MidContainer, NumberColorContainer, TextContainer, TextPrice, TextTitleCar } from './styles'
 import { FiArrowLeft,FiArrowRight } from "react-icons/fi";
 import Carrousel from '../../Components/Carrousel/Carrousel';
 import {Cars} from '../ListCars/ListCars'
@@ -28,33 +28,46 @@ const DetailCar:React.FC =() =>{
     const [currentIndex,setCurrentIndex] = useState(1);
     const [logoIsLoaded, setLogoIsLoaded] = useState(false);
     const [mainIsLoaded, setMainIsLoaded] = useState(false);
-   
+    const [width,setWidth] = useState(window.innerWidth)
+    
     console.log(options.length)
     
     useEffect(() => {
         ChangeIndex();
-        setCurrentIndex(1);
-      }, [currentIndex]);
-    
-    
-      function handleSelectActionModal(index: number) {
-        if (index === 2) {
-          setCurrentIndex(0);
-        }
-        if (index === 0) {
-          setCurrentIndex(2);
-        }
-      }
+        if(options.length <3)
+            setCurrentIndex(0)
+        else
+            setCurrentIndex(1);
+    }, [currentIndex]);
+    useEffect(()=>{
+        function handleResize() {
+            setWidth(window.innerWidth)
+          }
+      
+          window.addEventListener('resize', handleResize);
+          return () => window.removeEventListener('resize', handleResize);
+    },[width])  
+    console.log(width)
+    function handleSelectActionModal(index: number) {
+    if (index >currentIndex) {
+        setCurrentIndex(index);
+    }
+    if (index <currentIndex) {
+        setCurrentIndex(currentIndex);
+    }
+    }
     function ChangeIndex(){
-        if (currentIndex === 0) {
+        
+        if (currentIndex < 1) {
             let aux = currentData;
             let shift = aux.shift();
             setCurrentData([...currentData,shift]);            
-        }else if (currentIndex === 2) {
+        }else if (currentIndex > 1) {
             let aux = currentData;
             let pop = aux.pop();
             setCurrentData([pop,...currentData]);
         }
+       
     }
     function handleListGoBack(){
         history.goBack();
@@ -86,7 +99,11 @@ const DetailCar:React.FC =() =>{
                 
             </MidContainer>
             <BookContainer>
-                <ButtonBook>Book Now <FiArrowRight className = "arrowRight" size={15}/> </ButtonBook>
+                <ButtonBook>Book Now <FiArrowRight className = "arrowRight" size={15}/> 
+                </ButtonBook>
+                {width>700?null: <BackButtonAux onClick = {handleListGoBack}>
+                    <FiArrowLeft className = "arrow" size = {15}/>Back to catalog    
+                </BackButtonAux>}
             </BookContainer>
             <BottomContainer>
                 <Carrousel prevSlide={handleSelectActionModal} 

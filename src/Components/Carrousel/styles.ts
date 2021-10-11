@@ -202,7 +202,7 @@ export const CarrouselContainer = styled.div`
     }
     @media (max-width:950px){
         justify-content: center;
-      
+        height: 300px;
         .slide {
             
             div{

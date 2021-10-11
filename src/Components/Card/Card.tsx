@@ -17,13 +17,14 @@ const Card : React.FC<card> = ({data})=>{
       };
     return(
         <CardDiv onClick = {() => handleDetailsPage(data)}>
-            {isLoaded?null:<Loading/>}
+           
             <TitleContainer>
                 <CarTitle>{brand}</CarTitle>
                 <CarModel>{model}</CarModel>
             </TitleContainer>
             <CarImageContainer>
                 <CarImage src = {image_card} onLoad = {()=>setIsLoaded(true)}/>
+                {isLoaded?null:<div style={{justifyContent:'center',alignItems:'center'}}><Loading/></div>}
             </CarImageContainer>
             <ValueContainer>
                 <h2>$</h2>

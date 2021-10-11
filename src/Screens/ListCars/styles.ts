@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin-top: 22px;
-
+ 
     @media (max-width: 800px) {
         flex-direction: column;
         display: flex;

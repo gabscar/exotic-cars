@@ -47,7 +47,7 @@ const ListCars :React.FC = ()=>{
         return <p>sem carros</p>
     }
     return(
-        <div style={{display:'flex', justifyContent:'center'}}>
+        <div style={{display:'flex', justifyContent:'center', }}>
             <CardContainer>
                 {RenderCars()}
             </CardContainer>

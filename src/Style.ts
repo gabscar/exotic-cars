@@ -5,6 +5,8 @@ export default createGlobalStyle`
       margin: 0px;
       padding: 0px;
       box-sizing: border-box;
+      max-width: 100vw;
+    
     }
     #root {
       display: flex;
@@ -15,5 +17,7 @@ export default createGlobalStyle`
     body {
      
       font-family: 'Segoe UI';
+     
+      
     }
 `;

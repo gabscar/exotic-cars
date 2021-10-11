@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { CarrouselContainer } from './styles';
 import { BsFillArrowRightCircleFill,BsFillArrowLeftCircleFill } from "react-icons/bs";
-import { FiArrowLeft,FiArrowRight } from "react-icons/fi";
 import { Loading } from '../LoadingComponent/LoadingComponent';
 interface carrousel{
     nextSlide: (index:number)=>void;
@@ -15,10 +14,10 @@ const Carrousel : React.FC<carrousel> = ({nextSlide,prevSlide,currentData,Curren
     const [optionIsLoaded, setOptionIsLoaded] = useState(false);
     
     
-  
+    
     return(
         <CarrouselContainer>
-            <BsFillArrowLeftCircleFill className='arrow' onClick={()=>prevSlide(CurrentIndex-1)} />
+            { currentData.length>1?<BsFillArrowLeftCircleFill className='arrow' onClick={()=>prevSlide(CurrentIndex-1)} />:null}
             {currentData.map((slide, index) => {
                
                 return (
@@ -27,18 +26,17 @@ const Carrousel : React.FC<carrousel> = ({nextSlide,prevSlide,currentData,Curren
                     className={CurrentIndex === index ? 'slide active' : 'slide'}
                     key={index}
                 >
-                    <div onClick={index>CurrentIndex?()=>nextSlide(CurrentIndex+1)
+                    <div  style={{cursor:'pointer'}}onClick={index>CurrentIndex?()=>nextSlide(CurrentIndex+1)
                         :index<CurrentIndex?()=>prevSlide(CurrentIndex-1):()=>prevSlide(CurrentIndex)}>
                         {optionIsLoaded? null : <div style={{display:'flex', alignItems:'center',justifyContent:'center'}}><Loading/></div>}
                         <img className={CurrentIndex === index ? 'img-active' : 'img'}src={slide.image} onLoad={()=>setOptionIsLoaded(true)} />
                     </div>
-                  
                 </div>
                 }
                 </>
                 );
             })}
-            <BsFillArrowRightCircleFill className='arrow' onClick={()=>nextSlide(CurrentIndex+1)} />
+            {currentData.length>1?<BsFillArrowRightCircleFill className='arrow' onClick={()=>nextSlide(CurrentIndex+1)} />:null}
         </CarrouselContainer>
     )
 }
